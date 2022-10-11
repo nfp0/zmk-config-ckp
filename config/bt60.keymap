@@ -24,7 +24,6 @@
 				&kp LSHFT &kp NON_US_BSLH &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA &kp DOT &kp FSLH         &kp RSHFT &mo 2
 				&kp LCTRL &kp LGUI &kp LALT            &kp SPACE                          &kp RALT  &kp RGUI &kp K_CMENU    &kp RCTRL
 			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		layer1 {
 			bindings = <
@@ -34,7 +33,6 @@
 				&trans &kp GRAVE &kp PG_UP &kp PG_DN &kp CAPS &none &bootloader &none &kp PG_UP &kp PG_DN &none &kp LS(N7) &trans &trans
 				&trans &trans &trans                &none                          &trans &trans &trans &trans
 			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 		layer2 {
 			bindings = <
@@ -44,7 +42,6 @@
 				&trans &kp GRAVE &none &none &kp CAPS &none &bootloader &none &none &none &none &kp PG_UP &kp PG_DN &trans
 				&trans &trans &trans                &none                          &trans &trans &trans &trans
 			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 	};
 };

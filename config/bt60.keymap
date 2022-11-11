@@ -30,17 +30,35 @@
 				&bt BT_CLR &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp DEL
 				&trans &kp HOME &kp UP &kp END &none &none &none &kp HOME &kp UP &kp END &kp PSCRN &kp SLCK &kp PAUSE_BREAK
 				&trans &kp LEFT &kp DOWN &kp RIGHT &none &none &none &kp LEFT &kp DOWN &kp RIGHT &none &none &none &kp INSERT
-				&trans &kp GRAVE &kp PG_UP &kp PG_DN &kp CAPS &none &bootloader &none &kp PG_UP &kp PG_DN &none &kp LS(N7) &trans &trans
+				&trans &kp GRAVE &kp PG_UP &kp PG_DN &kp CAPS &none &bootloader &none &kp PG_UP &kp PG_DN &none &kp LS(N7) &trans &mo 3
 				&trans &trans &trans                &none                          &trans &trans &trans &trans
 			>;
 		};
 		layer2 {
 			bindings = <
-				&none &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp DEL
-				&trans &none &none &none &none &none &none &none &none &none &kp HOME &kp UP &kp END
-				&trans &none &none &none &none &none &none &none &none &none &kp LEFT &kp DOWN &kp RIGHT &kp INSERT
-				&trans &kp GRAVE &none &none &kp CAPS &none &bootloader &none &none &none &none &kp PG_UP &kp PG_DN &trans
-				&trans &trans &trans                &none                          &trans &trans &trans &trans
+				&trans &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &none &kp HOME &kp UP &kp END
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &none &kp LEFT &kp DOWN &kp RIGHT &trans
+				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &none &kp PG_UP &kp PG_DN &trans
+				&trans &trans &trans                &trans                          &trans &trans &trans &trans
+			>;
+		};
+		layer3 {
+			bindings = <
+				&none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &none &none &bt BT_CLR
+				&none &none &none &none &none &none &none &none &none &none &none &none &none
+				&trans &none &none &none &none &none &none &none &none &none &none &none &none &none
+				&none &none &none &none &none &none &bootloader &none &none &none &none &none &none &trans
+				&none &none &none                &none                          &none &none &none &none
+			>;
+		};
+		layer4 {
+			bindings = <
+				&none &none &none &none &none &none &none &none &none &none &none &none &none &none
+				&none &none &none &none &none &none &none &none &none &none &none &none &none
+				&none &none &none &none &none &none &none &none &none &none &none &none &none &none
+				&none &none &none &none &none &none &bootloader &none &none &none &none &none &none &none
+				&none &none &none                &none                          &none &none &none &none
 			>;
 		};
 	};
